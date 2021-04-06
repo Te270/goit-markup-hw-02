@@ -1,3 +1,52 @@
-body {
-  background-color: tomato;
+:root {
+  --primary-text-color: #757575;
+  --section-title-color: #212121;
+  --accent-color: #2196f3;
+}
+.body {
+  background-color: #e5e5e5;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+}
+
+.logo {
+  color: #000000;
+}
+
+/* Site nav */
+.site-nav .link {
+  color: var(--section-title-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* Site-contacts */
+.site-contacts .link {
+  color: var(--primary-text-color);
+}
+
+.site-contacts .link:hover,
+.site-contacts .link:focus {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-title {
+  color: #ffffff;
+}
+/* Section */
+
+.section-title {
+  color: var(--section-title-color);
+}
+
+/* Features */
+.features-title {
+  color: var(--section-title-color);
 }

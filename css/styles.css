@@ -3,11 +3,12 @@
   --section-title-color: #212121;
   --accent-color: #2196f3;
   --button-text-color: #ffffff;
+  --dark-bcg-cl: #2f303a;
 }
 
 /* Стили для index.html */
 .body {
-  background: #e5e5e5;
+  background-color: #e5e5e5;
   color: var(--primary-text-color);
 }
 .list {
@@ -15,7 +16,7 @@
 }
 
 .logo {
-  color: #000000;
+  color: var(--accent-color);
 }
 
 /* Site nav */
@@ -43,6 +44,9 @@
 
 /* Hero */
 
+.hero {
+  background-color: var(--dark-bcg-cl);
+}
 .hero-title {
   color: #ffffff;
 }
@@ -57,17 +61,23 @@
   color: var(--section-title-color);
 }
 
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 /* Team */
 
 .team {
   background-color: #f5f4fa;
 }
 
-.team-title {
-  color: var(--section-title-color);
-}
-
-.employees .list {
+.master .list {
   color: var(--section-title-color);
 }
 /* Button */
@@ -79,6 +89,25 @@
 .button.primary {
   background-color: var(--accent-color);
   color: var(--button-text-color);
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--dark-bcg-cl);
+}
+
+.address {
+  color: var(--button-text-color);
+}
+
+.footer-contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--accent-color);
 }
 
 /* Стили для portfolio.html */

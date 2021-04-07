@@ -3,7 +3,9 @@
   --section-title-color: #212121;
   --accent-color: #2196f3;
   --button-text-color: #ffffff;
+
   --dark-bcg-cl: #2f303a;
+  --button-bcg-cl: #f5f4fa;
 }
 
 /* Стили для index.html */
@@ -111,3 +113,8 @@
 }
 
 /* Стили для portfolio.html */
+
+.filters {
+  color: var(--section-title-color);
+  background-color: var(--button-bcg-cl);
+}

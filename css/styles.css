@@ -2,9 +2,12 @@
   --primary-text-color: #757575;
   --section-title-color: #212121;
   --accent-color: #2196f3;
+  --button-text-color: #ffffff;
 }
+
+/* Стили для index.html */
 .body {
-  background-color: #e5e5e5;
+  background: #e5e5e5;
   color: var(--primary-text-color);
 }
 .list {
@@ -25,6 +28,9 @@
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
 /* Site-contacts */
 .site-contacts .link {
   color: var(--primary-text-color);
@@ -47,6 +53,32 @@
 }
 
 /* Features */
-.features-title {
+.features-list .title {
   color: var(--section-title-color);
 }
+
+/* Team */
+
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-title {
+  color: var(--section-title-color);
+}
+
+.employees .list {
+  color: var(--section-title-color);
+}
+/* Button */
+
+.button {
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+}
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--button-text-color);
+}
+
+/* Стили для portfolio.html */

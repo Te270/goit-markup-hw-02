@@ -118,3 +118,9 @@
   color: var(--section-title-color);
   background-color: var(--button-bcg-cl);
 }
+
+.filters:hover,
+.filters:focus {
+  color: var(--button-text-color);
+  background-color: var(--accent-color);
+}

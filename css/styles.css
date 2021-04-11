@@ -3,14 +3,16 @@
   --section-title-color: #212121;
   --accent-color: #2196f3;
   --button-text-color: #ffffff;
+  --dark-accent-color: #000000;
+  --white-accent-color: #ffffff;
 
   --dark-bcg-cl: #2f303a;
   --button-bcg-cl: #f5f4fa;
+  --team-bcg-cl: #f5f4fa;
 }
 
 /* Стили для index.html */
 body {
-  background-color: #e5e5e5;
   color: var(--primary-text-color);
 
   font-family: Roboto, sans-serif;
@@ -22,15 +24,26 @@ body {
 }
 
 .logo {
-  color: var(--accent-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
 }
+
+.logo,
+.site-nav .link:hover,
+.site-nav .link:focus,
+.site-nav .link.current,
+.site-contacts .link:hover,
+.site-contacts .link:focus,
+.address-contacts:hover,
+.address-contacts:focus {
+  color: var(--accent-color);
+}
+
 .accent {
-  color: #000000;
+  color: var(--dark-accent-color);
 }
 /* Site nav */
 
@@ -43,14 +56,6 @@ body {
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.site-nav .link.current {
-  color: var(--accent-color);
-}
 /* Site-contacts */
 
 .site-contacts .link {
@@ -62,11 +67,6 @@ body {
   text-decoration: none;
 }
 
-.site-contacts .link:hover,
-.site-contacts .link:focus {
-  color: var(--accent-color);
-}
-
 /* Hero */
 
 .hero {
@@ -74,7 +74,7 @@ body {
   letter-spacing: 0.06em;
 }
 .hero-title {
-  color: #ffffff;
+  color: var(--white-accent-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -120,7 +120,7 @@ body {
 /* Team */
 
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--team-bcg-cl);
 }
 
 .master .list {
@@ -136,13 +136,16 @@ body {
 }
 /* Button */
 
-.button {
-  color: var(--button-text-color);
+.button,
+.button.primary {
   background-color: var(--accent-color);
 }
 
+.button {
+  color: var(--button-text-color);
+}
+
 .button.primary {
-  background-color: var(--accent-color);
   color: var(--button-text-color);
   letter-spacing: 0.06em;
   font-weight: 700;
@@ -156,29 +159,24 @@ body {
 
 /* Footer */
 
-.footer {
+.address {
   background-color: var(--dark-bcg-cl);
   font-size: 14px;
   line-height: 1.71;
 }
 
-.footer .address {
+.address-location {
   color: var(--button-text-color);
   font-style: normal;
 }
 
-.footer-contacts {
+.address-contacts {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 
-.footer-contacts:hover,
-.footer-contacts:focus {
-  color: var(--accent-color);
-}
-
-.footer-accent {
-  color: #ffffff;
+.address-accent {
+  color: var(--white-accent-color);
 }
 
 /* Стили для portfolio.html */

@@ -159,7 +159,7 @@ body {
 
 /* Footer */
 
-.address {
+footer {
   background-color: var(--dark-bcg-cl);
   font-size: 14px;
   line-height: 1.71;
